@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,9 @@
 		084C7A7029720290009B6B45 /* HighWatersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084C7A6F29720290009B6B45 /* HighWatersUITests.swift */; };
 		084C7A7229720290009B6B45 /* HighWatersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084C7A7129720290009B6B45 /* HighWatersUITestsLaunchTests.swift */; };
 		08B9EFA32972A08B00FF7241 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08B9EFA22972A08B00FF7241 /* GoogleService-Info.plist */; };
+		1E31D51A1DD6E0003FF12504 /* Pods_HighWaters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD44E042A1657D8ED20B3BFD /* Pods_HighWaters.framework */; };
+		1E3F01FDA6F33A88266AA6C7 /* Pods_HighWatersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B150D232502A52B180B235E /* Pods_HighWatersTests.framework */; };
+		CA85DF8FF9F9B784EFF288F1 /* Pods_HighWaters_HighWatersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A923DFCD5C32CBE5FA43F5 /* Pods_HighWaters_HighWatersUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0639BC103FF9AF28B5DC3CD1 /* Pods-HighWaters-HighWatersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighWaters-HighWatersUITests.release.xcconfig"; path = "Target Support Files/Pods-HighWaters-HighWatersUITests/Pods-HighWaters-HighWatersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		084C7A4B2972028F009B6B45 /* HighWaters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighWaters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		084C7A4E2972028F009B6B45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		084C7A502972028F009B6B45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +54,15 @@
 		084C7A6B29720290009B6B45 /* HighWatersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighWatersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		084C7A6F29720290009B6B45 /* HighWatersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighWatersUITests.swift; sourceTree = "<group>"; };
 		084C7A7129720290009B6B45 /* HighWatersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighWatersUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		08B9EFA22972A08B00FF7241 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		08B9EFA22972A08B00FF7241 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1B150D232502A52B180B235E /* Pods_HighWatersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HighWatersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64458E1B63850A02E23DF09E /* Pods-HighWatersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighWatersTests.debug.xcconfig"; path = "Target Support Files/Pods-HighWatersTests/Pods-HighWatersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80BB95536DEFDB9EB1F23BAF /* Pods-HighWaters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighWaters.release.xcconfig"; path = "Target Support Files/Pods-HighWaters/Pods-HighWaters.release.xcconfig"; sourceTree = "<group>"; };
+		B9A923DFCD5C32CBE5FA43F5 /* Pods_HighWaters_HighWatersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HighWaters_HighWatersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBB2F962760FFC4FAE39B73 /* Pods-HighWaters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighWaters.debug.xcconfig"; path = "Target Support Files/Pods-HighWaters/Pods-HighWaters.debug.xcconfig"; sourceTree = "<group>"; };
+		D115EACEF2CD83D44DEF4A0D /* Pods-HighWaters-HighWatersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighWaters-HighWatersUITests.debug.xcconfig"; path = "Target Support Files/Pods-HighWaters-HighWatersUITests/Pods-HighWaters-HighWatersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD44E042A1657D8ED20B3BFD /* Pods_HighWaters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HighWaters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11B4302E49385DA16555D44 /* Pods-HighWatersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighWatersTests.release.xcconfig"; path = "Target Support Files/Pods-HighWatersTests/Pods-HighWatersTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E31D51A1DD6E0003FF12504 /* Pods_HighWaters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3F01FDA6F33A88266AA6C7 /* Pods_HighWatersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA85DF8FF9F9B784EFF288F1 /* Pods_HighWaters_HighWatersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				084C7A6429720290009B6B45 /* HighWatersTests */,
 				084C7A6E29720290009B6B45 /* HighWatersUITests */,
 				084C7A4C2972028F009B6B45 /* Products */,
+				0E07A2EF9340F2E8FBC55DA0 /* Pods */,
+				98CA93EAE1EBBEC851155F18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +147,30 @@
 			path = HighWatersUITests;
 			sourceTree = "<group>";
 		};
+		0E07A2EF9340F2E8FBC55DA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB2F962760FFC4FAE39B73 /* Pods-HighWaters.debug.xcconfig */,
+				80BB95536DEFDB9EB1F23BAF /* Pods-HighWaters.release.xcconfig */,
+				D115EACEF2CD83D44DEF4A0D /* Pods-HighWaters-HighWatersUITests.debug.xcconfig */,
+				0639BC103FF9AF28B5DC3CD1 /* Pods-HighWaters-HighWatersUITests.release.xcconfig */,
+				64458E1B63850A02E23DF09E /* Pods-HighWatersTests.debug.xcconfig */,
+				F11B4302E49385DA16555D44 /* Pods-HighWatersTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		98CA93EAE1EBBEC851155F18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD44E042A1657D8ED20B3BFD /* Pods_HighWaters.framework */,
+				B9A923DFCD5C32CBE5FA43F5 /* Pods_HighWaters_HighWatersUITests.framework */,
+				1B150D232502A52B180B235E /* Pods_HighWatersTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 084C7A7529720290009B6B45 /* Build configuration list for PBXNativeTarget "HighWaters" */;
 			buildPhases = (
+				01896701401364D2BBB57F5B /* [CP] Check Pods Manifest.lock */,
 				084C7A472972028F009B6B45 /* Sources */,
 				084C7A482972028F009B6B45 /* Frameworks */,
 				084C7A492972028F009B6B45 /* Resources */,
+				B58BE98777C8612166EA563D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 084C7A7829720290009B6B45 /* Build configuration list for PBXNativeTarget "HighWatersTests" */;
 			buildPhases = (
+				956705FFA7E913D9DCF8A0AB /* [CP] Check Pods Manifest.lock */,
 				084C7A5D29720290009B6B45 /* Sources */,
 				084C7A5E29720290009B6B45 /* Frameworks */,
 				084C7A5F29720290009B6B45 /* Resources */,
@@ -172,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 084C7A7B29720290009B6B45 /* Build configuration list for PBXNativeTarget "HighWatersUITests" */;
 			buildPhases = (
+				202292CF0CAB87A9AD16D713 /* [CP] Check Pods Manifest.lock */,
 				084C7A6729720290009B6B45 /* Sources */,
 				084C7A6829720290009B6B45 /* Frameworks */,
 				084C7A6929720290009B6B45 /* Resources */,
+				5D7F870B6E23D798892CF6A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,7 +256,7 @@
 				};
 			};
 			buildConfigurationList = 084C7A462972028F009B6B45 /* Build configuration list for PBXProject "HighWaters" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -256,6 +302,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01896701401364D2BBB57F5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HighWaters-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		202292CF0CAB87A9AD16D713 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HighWaters-HighWatersUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D7F870B6E23D798892CF6A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HighWaters-HighWatersUITests/Pods-HighWaters-HighWatersUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HighWaters-HighWatersUITests/Pods-HighWaters-HighWatersUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HighWaters-HighWatersUITests/Pods-HighWaters-HighWatersUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		956705FFA7E913D9DCF8A0AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HighWatersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B58BE98777C8612166EA563D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HighWaters/Pods-HighWaters-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HighWaters/Pods-HighWaters-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HighWaters/Pods-HighWaters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		084C7A472972028F009B6B45 /* Sources */ = {
@@ -436,6 +585,7 @@
 		};
 		084C7A7629720290009B6B45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEBB2F962760FFC4FAE39B73 /* Pods-HighWaters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,6 +613,7 @@
 		};
 		084C7A7729720290009B6B45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80BB95536DEFDB9EB1F23BAF /* Pods-HighWaters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +641,7 @@
 		};
 		084C7A7929720290009B6B45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64458E1B63850A02E23DF09E /* Pods-HighWatersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +661,7 @@
 		};
 		084C7A7A29720290009B6B45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11B4302E49385DA16555D44 /* Pods-HighWatersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +681,7 @@
 		};
 		084C7A7C29720290009B6B45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D115EACEF2CD83D44DEF4A0D /* Pods-HighWaters-HighWatersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -545,6 +699,7 @@
 		};
 		084C7A7D29720290009B6B45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0639BC103FF9AF28B5DC3CD1 /* Pods-HighWaters-HighWatersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
