@@ -16,19 +16,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     @IBOutlet weak var mapKit: MKMapView!
 
     private var rootRef: DatabaseReference!
-
     private var locationManager: CLLocationManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         rootRef = Database.database().reference()
-
         locationManager = CLLocationManager()
         locationManager.delegate = self
-
         locationManager.requestWhenInUseAuthorization()
-
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = kCLDistanceFilterNone
 
@@ -36,7 +32,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         mapKit.delegate = self
 
         locationManager.startUpdatingLocation()
-
         setupUI()
     }
 
@@ -67,7 +62,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             let locationModel = Location(latitude: coordinate.latitude,
                                          longitude: coordinate.longitude)
             let LocationRegionRef = rootRef.child("location-regions")
-            let locationRef = LocationRegionRef.child("location")
+            let locationRef = LocationRegionRef.childByAutoId()
             locationRef.setValue(locationModel.toDictionary())
         }
     }
