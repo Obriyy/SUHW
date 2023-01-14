@@ -9,15 +9,20 @@ import UIKit
 import MapKit
 import CoreLocation
 import FirebaseCore
+import FirebaseDatabase
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
     @IBOutlet weak var mapKit: MKMapView!
 
+    private var rootRef: DatabaseReference!
+
     private var locationManager: CLLocationManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        rootRef = Database.database().reference()
 
         locationManager = CLLocationManager()
         locationManager.delegate = self
@@ -57,6 +62,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             let annotation = MKPointAnnotation()
             annotation.coordinate = location.coordinate
             mapKit.addAnnotation(annotation)
+
+            let coordinate = location.coordinate
+            let locationModel = Location(latitude: coordinate.latitude,
+                                         longitude: coordinate.longitude)
+            let LocationRegionRef = rootRef.child("location-regions")
+            let locationRef = LocationRegionRef.child("location")
+            locationRef.setValue(locationModel.toDictionary())
         }
     }
 

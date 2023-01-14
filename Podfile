@@ -6,7 +6,8 @@ target 'HighWaters' do
   use_frameworks!
 
   # Pods for HighWaters
-  pod 'FirebaseCore' 
+  pod 'FirebaseCore'
+  pod 'FirebaseDatabase'
 
   target 'HighWatersTests' do
     inherit! :search_paths

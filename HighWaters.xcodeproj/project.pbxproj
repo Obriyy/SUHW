@@ -16,6 +16,7 @@
 		084C7A6629720290009B6B45 /* HighWatersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084C7A6529720290009B6B45 /* HighWatersTests.swift */; };
 		084C7A7029720290009B6B45 /* HighWatersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084C7A6F29720290009B6B45 /* HighWatersUITests.swift */; };
 		084C7A7229720290009B6B45 /* HighWatersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084C7A7129720290009B6B45 /* HighWatersUITestsLaunchTests.swift */; };
+		08A45B022972F6840069A761 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A45B012972F6840069A761 /* Location.swift */; };
 		08B9EFA32972A08B00FF7241 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08B9EFA22972A08B00FF7241 /* GoogleService-Info.plist */; };
 		1E31D51A1DD6E0003FF12504 /* Pods_HighWaters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD44E042A1657D8ED20B3BFD /* Pods_HighWaters.framework */; };
 		1E3F01FDA6F33A88266AA6C7 /* Pods_HighWatersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B150D232502A52B180B235E /* Pods_HighWatersTests.framework */; };
@@ -54,6 +55,7 @@
 		084C7A6B29720290009B6B45 /* HighWatersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighWatersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		084C7A6F29720290009B6B45 /* HighWatersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighWatersUITests.swift; sourceTree = "<group>"; };
 		084C7A7129720290009B6B45 /* HighWatersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighWatersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08A45B012972F6840069A761 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		08B9EFA22972A08B00FF7241 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B150D232502A52B180B235E /* Pods_HighWatersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HighWatersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64458E1B63850A02E23DF09E /* Pods-HighWatersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighWatersTests.debug.xcconfig"; path = "Target Support Files/Pods-HighWatersTests/Pods-HighWatersTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				084C7A5929720290009B6B45 /* LaunchScreen.storyboard */,
 				084C7A5C29720290009B6B45 /* Info.plist */,
 				08B9EFA22972A08B00FF7241 /* GoogleService-Info.plist */,
+				08A45B012972F6840069A761 /* Location.swift */,
 			);
 			path = HighWaters;
 			sourceTree = "<group>";
@@ -157,7 +160,6 @@
 				64458E1B63850A02E23DF09E /* Pods-HighWatersTests.debug.xcconfig */,
 				F11B4302E49385DA16555D44 /* Pods-HighWatersTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -413,6 +415,7 @@
 			files = (
 				084C7A532972028F009B6B45 /* ViewController.swift in Sources */,
 				084C7A4F2972028F009B6B45 /* AppDelegate.swift in Sources */,
+				08A45B022972F6840069A761 /* Location.swift in Sources */,
 				084C7A512972028F009B6B45 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
