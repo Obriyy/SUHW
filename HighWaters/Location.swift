@@ -15,3 +15,16 @@ struct Location {
         return ["latitude": latitude, "longitude": longitude]
     }
 }
+
+extension Location {
+
+    init?(dict: [String: Any]) {
+        guard let latitude = dict["latitude"] as? Double,
+              let longitude = dict["longitude"] as? Double else {
+            return nil
+        }
+
+        self.latitude = latitude
+        self.longitude = longitude
+    }
+}

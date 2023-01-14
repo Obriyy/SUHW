@@ -13,7 +13,7 @@ import FirebaseDatabase
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
-    @IBOutlet weak var mapKit: MKMapView!
+    @IBOutlet weak var mapView: MKMapView!
 
     private var rootRef: DatabaseReference!
     private var locationManager: CLLocationManager!
@@ -28,11 +28,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = kCLDistanceFilterNone
 
-        mapKit.showsUserLocation = true
-        mapKit.delegate = self
+        mapView.showsUserLocation = true
+        mapView.delegate = self
 
         locationManager.startUpdatingLocation()
         setupUI()
+        populateLocationRedords()
     }
 
     private func setupUI() {
@@ -48,15 +49,33 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         addButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -40).isActive = true
         addButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
         addButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    }
 
-
+    private func populateLocationRedords() {
+        let locationRegionsRef = rootRef.child("location-regions")
+        locationRegionsRef.observe(.value) { snapshot in
+            self.mapView.removeAnnotations(self.mapView.annotations)
+            let locationDictionaries = snapshot.value as? [String: Any] ?? [:]
+            for (key, _) in locationDictionaries {
+                if let locationDict = locationDictionaries[key] as? [String: Any] {
+                    if let location = Location(dict: locationDict) {
+                        DispatchQueue.main.async {
+                            let locationAnnotation = MKPointAnnotation()
+                            locationAnnotation.coordinate = CLLocationCoordinate2D(latitude: location.latitude,
+                                                                                   longitude: location.longitude)
+                            self.mapView.addAnnotation(locationAnnotation)
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @objc func addButtonAnnotation(sender: Any) {
         if let location = locationManager.location {
             let annotation = MKPointAnnotation()
             annotation.coordinate = location.coordinate
-            mapKit.addAnnotation(annotation)
+            mapView.addAnnotation(annotation)
 
             let coordinate = location.coordinate
             let locationModel = Location(latitude: coordinate.latitude,
@@ -72,7 +91,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             let coordinate = location.coordinate
             let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
             let region = MKCoordinateRegion(center: coordinate, span: span)
-            mapKit.setRegion(region, animated: true)
+            mapView.setRegion(region, animated: true)
         }
     }
 
